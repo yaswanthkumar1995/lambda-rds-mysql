@@ -70,26 +70,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>com.bazaarvoice.maven.plugins</groupId>
-                <artifactId>s3-upload-maven-plugin</artifactId>
-                <version>1.4</version>
-                <configuration>
-                    <accessKey>AKIA3XBJG7TNSCP6WAP6</accessKey>
-                    <secretKey>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</secretKey>
-                    <bucketName>aws-devops-y</bucketName>
-                    <source>target/${project.artifactId}-${project.version}.jar</source>
-                    <destination>${project.artifactId}-${project.version}.jar</destination>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>s3-upload</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
         </plugins>
     </build>
 
