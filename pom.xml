@@ -75,9 +75,9 @@
                 <artifactId>s3-upload-maven-plugin</artifactId>
                 <version>1.4</version>
                 <configuration>
-                    <accessKey>${aws_access_key_id}</accessKey>
-                    <secretKey>${aws_secret_access_key}</secretKey>
-                    <bucketName>arungupta</bucketName>
+                    <accessKey>AKIA3XBJG7TNSCP6WAP6</accessKey>
+                    <secretKey>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</secretKey>
+                    <bucketName>aws-devops-y</bucketName>
                     <source>target/${project.artifactId}-${project.version}.jar</source>
                     <destination>${project.artifactId}-${project.version}.jar</destination>
                 </configuration>
